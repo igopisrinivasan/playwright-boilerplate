@@ -1,4 +1,4 @@
 {
   "mochaTimeoutMS": 30000,
-  "baseURL": "https://webdriverjsdemo.github.io"
+  "baseURL": "https://the-internet.herokuapp.com/"
 }

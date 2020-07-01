@@ -1,7 +1,7 @@
 {
   "name": "playwright-demo-project",
   "version": "1.0.0",
-  "description": "An example playwright project to see how this works on circle CI",
+  "description": "An example playwright project",
   "main": "index.js",
   "dependencies": {
     "babel-core": "^6.26.3",

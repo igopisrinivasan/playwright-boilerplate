@@ -16,10 +16,10 @@ describe( 'Playwright 1', function() {
 	it( 'can wait for an element to appear', async function() {
 		const context = await browser.newContext();
 		const page = await context.newPage( `${ config.get( 'baseURL' )}` );
-		await page.waitForSelector( '#elementappearschild', { visible: true, timeout: 5000 } );
+		await page.waitForSelector('#content > ul > li:nth-child(1) > a');
 	} );
 
-	it( 'can handle alerts', async function() {
+	it.skip( 'can handle alerts', async function() {
 		const context = await browser.newContext();
 		const page = await context.newPage();
 		page.on('dialog', async dialog => {
@@ -30,7 +30,7 @@ describe( 'Playwright 1', function() {
 		await page.waitForSelector( '#elementappearsparent', { visible: true, timeout: 5000 } );
 	} );
 
-	it( 'can check for errors when there should be none', async function() {
+	it.skip( 'can check for errors when there should be none', async function() {
 		const context = await browser.newContext();
 		const page = await context.newPage();
 		let errors = '';
@@ -41,7 +41,7 @@ describe( 'Playwright 1', function() {
 		assert.equal( errors, '' );
 	} );
 
-	it( 'can use xpath selectors to find elements', async function() {
+	it.skip( 'can use xpath selectors to find elements', async function() {
 		const context = await browser.newContext();
 		const page = await context.newPage();
 		await page.goto( `${ config.get( 'baseURL' )}` );
