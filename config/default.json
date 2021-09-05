@@ -1,4 +1,0 @@
-{
-  "mochaTimeoutMS": 30000,
-  "baseURL": "https://the-internet.herokuapp.com/"
-}
