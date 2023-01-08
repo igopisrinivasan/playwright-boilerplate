@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/igopisrinivasan/playwright-boilerplate#readme",
   "devDependencies": {
-    "@playwright/test": "^1.21.1"
+    "@playwright/test": "^1.29.2"
   }
 }
